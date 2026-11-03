@@ -1,0 +1,30 @@
+name: writeAWorkflow
+
+on: push:
+      branches: [main]
+    pull_request:
+
+jobs:
+  runs-on: ubuntu-latest
+  steps:
+    
+    - name: Check out the code
+      uses: actions/checkout@v7
+    
+    - name: Set up Node
+      uses: actions/setup-node@v7
+      with:
+        node-version: 22
+        cache: npm
+    
+    - name: install dependecies
+      run: npm ci
+      
+    - name: check the types
+      runs: npm run check
+    
+    - name: check the test
+      runs: npm run test:run
+    
+    - name: check the build
+      runs: npm run build
