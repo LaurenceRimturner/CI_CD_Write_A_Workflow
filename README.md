@@ -1,3 +1,5 @@
+[![CI](https://github.com/LaurenceRimturner/CI_CD_Write_A_Workflow/actions/workflows/ci.yml/badge.svg)](https://github.com/LaurenceRimturner/CI_CD_Write_A_Workflow/actions/workflows/ci.yml)
+
 # Write a Workflow
 
 (difficulty: 🔥)
